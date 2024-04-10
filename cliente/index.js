@@ -1,4 +1,5 @@
 import {Comunicacion} from "./modules/comunicacion.js";
+console.log('funciono');
 // Esta variable la estraeremos en otra clase
 let ui = {
     listo : () => {
@@ -18,7 +19,7 @@ let ui = {
       };
     }
 }
-let comunicacion = new Comunicacion('localhost',8080,ui);
 document.getElementById('estado').innerHTML = 'Esperando...';
+let comunicacion = new Comunicacion('localhost',8080,ui);
 
   

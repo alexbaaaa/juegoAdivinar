@@ -10,7 +10,7 @@ class Comunicacion{
         }
         this.ws = new WebSocket('ws://'+url+':'+port);
         this.conectado = false;
-        this.ws = onopen() = (event) => {
+        this.ws.onopen = (event) => {
             this.conectado = true;
             ui.listo();
         };
